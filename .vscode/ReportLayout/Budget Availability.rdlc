@@ -67,20 +67,11 @@ End Function
         <Field Name="No_GLAccount">
           <DataField>No_GLAccount</DataField>
         </Field>
-        <Field Name="Dim1Caption">
-          <DataField>Dim1Caption</DataField>
-        </Field>
-        <Field Name="Dim2Caption">
-          <DataField>Dim2Caption</DataField>
-        </Field>
         <Field Name="Name_GLAccount">
           <DataField>Name_GLAccount</DataField>
         </Field>
         <Field Name="UserDim1">
           <DataField>UserDim1</DataField>
-        </Field>
-        <Field Name="UserDim2">
-          <DataField>UserDim2</DataField>
         </Field>
         <Field Name="TotalBudgetAmount">
           <DataField>TotalBudgetAmount</DataField>
@@ -106,9 +97,6 @@ End Function
         <Field Name="AvailableBudgetFormat">
           <DataField>AvailableBudgetFormat</DataField>
         </Field>
-        <Field Name="Summary">
-          <DataField>Summary</DataField>
-        </Field>
         <Field Name="GLAccountNo_GLEntry">
           <DataField>GLAccountNo_GLEntry</DataField>
         </Field>
@@ -127,20 +115,11 @@ End Function
         <Field Name="GlobalDimension1Code_GLEntry">
           <DataField>GlobalDimension1Code_GLEntry</DataField>
         </Field>
-        <Field Name="GlobalDimension2Code_GLEntry">
-          <DataField>GlobalDimension2Code_GLEntry</DataField>
-        </Field>
         <Field Name="Ext_No">
           <DataField>Ext_No</DataField>
         </Field>
-        <Field Name="PostingDate_GLEntry">
-          <DataField>PostingDate_GLEntry</DataField>
-        </Field>
         <Field Name="DocumentNo_PRLine3">
           <DataField>DocumentNo_PRLine3</DataField>
-        </Field>
-        <Field Name="LineNo_PRLine3">
-          <DataField>LineNo_PRLine3</DataField>
         </Field>
         <Field Name="No_PRLine3">
           <DataField>No_PRLine3</DataField>
@@ -169,20 +148,11 @@ End Function
         <Field Name="Status_PRLine3">
           <DataField>Status_PRLine3</DataField>
         </Field>
-        <Field Name="Globaldim1_PRLine3">
-          <DataField>Globaldim1_PRLine3</DataField>
-        </Field>
-        <Field Name="Globaldim2_PRLine3">
-          <DataField>Globaldim2_PRLine3</DataField>
-        </Field>
-        <Field Name="PRDate_PRLine3">
-          <DataField>PRDate_PRLine3</DataField>
+        <Field Name="Globaldim_PRLine3">
+          <DataField>Globaldim_PRLine3</DataField>
         </Field>
         <Field Name="DocumentNo_PurchaseLine">
           <DataField>DocumentNo_PurchaseLine</DataField>
-        </Field>
-        <Field Name="LineNo_PurchaseLine">
-          <DataField>LineNo_PurchaseLine</DataField>
         </Field>
         <Field Name="No_PurchaseLine">
           <DataField>No_PurchaseLine</DataField>
@@ -208,14 +178,41 @@ End Function
         <Field Name="Amount_PurchaseLineFormat">
           <DataField>Amount_PurchaseLineFormat</DataField>
         </Field>
-        <Field Name="ShortcustDim1_PurchaseLine">
-          <DataField>ShortcustDim1_PurchaseLine</DataField>
+        <Field Name="ShortcustDim_PurchaseLine">
+          <DataField>ShortcustDim_PurchaseLine</DataField>
         </Field>
-        <Field Name="ShortcustDim2_PurchaseLine">
-          <DataField>ShortcustDim2_PurchaseLine</DataField>
+        <Field Name="DocumentNo_PRLine4">
+          <DataField>DocumentNo_PRLine4</DataField>
         </Field>
-        <Field Name="PostingDate_PurchaseLine">
-          <DataField>PostingDate_PurchaseLine</DataField>
+        <Field Name="No_PRLine4">
+          <DataField>No_PRLine4</DataField>
+        </Field>
+        <Field Name="Description_PRLine4">
+          <DataField>Description_PRLine4</DataField>
+        </Field>
+        <Field Name="Quantity_PRLine4">
+          <DataField>Quantity_PRLine4</DataField>
+        </Field>
+        <Field Name="Quantity_PRLine4Format">
+          <DataField>Quantity_PRLine4Format</DataField>
+        </Field>
+        <Field Name="UnitCost_PRLine4">
+          <DataField>UnitCost_PRLine4</DataField>
+        </Field>
+        <Field Name="UnitCost_PRLine4Format">
+          <DataField>UnitCost_PRLine4Format</DataField>
+        </Field>
+        <Field Name="Amount_PRLine4">
+          <DataField>Amount_PRLine4</DataField>
+        </Field>
+        <Field Name="Amount_PRLine4Format">
+          <DataField>Amount_PRLine4Format</DataField>
+        </Field>
+        <Field Name="Status_PRLine4">
+          <DataField>Status_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim_PRLine4">
+          <DataField>Globaldim_PRLine4</DataField>
         </Field>
       </Fields>
       <Query>
