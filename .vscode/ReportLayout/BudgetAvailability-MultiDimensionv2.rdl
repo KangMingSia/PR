@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_GLAccount">
+          <DataField>No_GLAccount</DataField>
+        </Field>
+        <Field Name="CostCenterCaption">
+          <DataField>CostCenterCaption</DataField>
+        </Field>
+        <Field Name="gDim1Caption">
+          <DataField>gDim1Caption</DataField>
+        </Field>
+        <Field Name="gDim2Caption">
+          <DataField>gDim2Caption</DataField>
+        </Field>
+        <Field Name="gDim3Caption">
+          <DataField>gDim3Caption</DataField>
+        </Field>
+        <Field Name="gDim4Caption">
+          <DataField>gDim4Caption</DataField>
+        </Field>
+        <Field Name="gDim5Caption">
+          <DataField>gDim5Caption</DataField>
+        </Field>
+        <Field Name="gDim6Caption">
+          <DataField>gDim6Caption</DataField>
+        </Field>
+        <Field Name="gDim7Caption">
+          <DataField>gDim7Caption</DataField>
+        </Field>
+        <Field Name="gDim8Caption">
+          <DataField>gDim8Caption</DataField>
+        </Field>
+        <Field Name="Name_GLAccount">
+          <DataField>Name_GLAccount</DataField>
+        </Field>
+        <Field Name="UserDim1">
+          <DataField>UserDim1</DataField>
+        </Field>
+        <Field Name="TotalBudgetAmount">
+          <DataField>TotalBudgetAmount</DataField>
+        </Field>
+        <Field Name="TotalBudgetAmountFormat">
+          <DataField>TotalBudgetAmountFormat</DataField>
+        </Field>
+        <Field Name="OnHold">
+          <DataField>OnHold</DataField>
+        </Field>
+        <Field Name="OnHoldFormat">
+          <DataField>OnHoldFormat</DataField>
+        </Field>
+        <Field Name="Utilised">
+          <DataField>Utilised</DataField>
+        </Field>
+        <Field Name="UtilisedFormat">
+          <DataField>UtilisedFormat</DataField>
+        </Field>
+        <Field Name="gShortcutDimCode">
+          <DataField>gShortcutDimCode</DataField>
+        </Field>
+        <Field Name="AvailableBudget">
+          <DataField>AvailableBudget</DataField>
+        </Field>
+        <Field Name="AvailableBudgetFormat">
+          <DataField>AvailableBudgetFormat</DataField>
+        </Field>
+        <Field Name="GLAccountNo_GLEntry">
+          <DataField>GLAccountNo_GLEntry</DataField>
+        </Field>
+        <Field Name="DocumentNo_GLEntry">
+          <DataField>DocumentNo_GLEntry</DataField>
+        </Field>
+        <Field Name="Description_GLEntry">
+          <DataField>Description_GLEntry</DataField>
+        </Field>
+        <Field Name="Amount_GLEntry">
+          <DataField>Amount_GLEntry</DataField>
+        </Field>
+        <Field Name="Amount_GLEntryFormat">
+          <DataField>Amount_GLEntryFormat</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_GLEntry">
+          <DataField>GlobalDimension1Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_GLEntry">
+          <DataField>GlobalDimension2Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension3Code_GLEntry">
+          <DataField>GlobalDimension3Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension4Code_GLEntry">
+          <DataField>GlobalDimension4Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension5Code_GLEntry">
+          <DataField>GlobalDimension5Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension6Code_GLEntry">
+          <DataField>GlobalDimension6Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension7Code_GLEntry">
+          <DataField>GlobalDimension7Code_GLEntry</DataField>
+        </Field>
+        <Field Name="GlobalDimension8Code_GLEntry">
+          <DataField>GlobalDimension8Code_GLEntry</DataField>
+        </Field>
+        <Field Name="Ext_No">
+          <DataField>Ext_No</DataField>
+        </Field>
+        <Field Name="DocumentNo_PRLine3">
+          <DataField>DocumentNo_PRLine3</DataField>
+        </Field>
+        <Field Name="No_PRLine3">
+          <DataField>No_PRLine3</DataField>
+        </Field>
+        <Field Name="Description_PRLine3">
+          <DataField>Description_PRLine3</DataField>
+        </Field>
+        <Field Name="Quantity_PRLine3">
+          <DataField>Quantity_PRLine3</DataField>
+        </Field>
+        <Field Name="Quantity_PRLine3Format">
+          <DataField>Quantity_PRLine3Format</DataField>
+        </Field>
+        <Field Name="UnitCost_PRLine3">
+          <DataField>UnitCost_PRLine3</DataField>
+        </Field>
+        <Field Name="UnitCost_PRLine3Format">
+          <DataField>UnitCost_PRLine3Format</DataField>
+        </Field>
+        <Field Name="Amount_PRLine3">
+          <DataField>Amount_PRLine3</DataField>
+        </Field>
+        <Field Name="Amount_PRLine3Format">
+          <DataField>Amount_PRLine3Format</DataField>
+        </Field>
+        <Field Name="Status_PRLine3">
+          <DataField>Status_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim_PRLine3">
+          <DataField>Globaldim_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim2_PRLine3">
+          <DataField>Globaldim2_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim3_PRLine3">
+          <DataField>Globaldim3_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim4_PRLine3">
+          <DataField>Globaldim4_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim5_PRLine3">
+          <DataField>Globaldim5_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim6_PRLine3">
+          <DataField>Globaldim6_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim7_PRLine3">
+          <DataField>Globaldim7_PRLine3</DataField>
+        </Field>
+        <Field Name="Globaldim8_PRLine3">
+          <DataField>Globaldim8_PRLine3</DataField>
+        </Field>
+        <Field Name="DocumentNo_PurchaseLine">
+          <DataField>DocumentNo_PurchaseLine</DataField>
+        </Field>
+        <Field Name="No_PurchaseLine">
+          <DataField>No_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Description_PurchaseLine">
+          <DataField>Description_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLine">
+          <DataField>Quantity_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLineFormat">
+          <DataField>Quantity_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="UnitCost_PurchaseLine">
+          <DataField>UnitCost_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitCost_PurchaseLineFormat">
+          <DataField>UnitCost_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="Amount_PurchaseLine">
+          <DataField>Amount_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Amount_PurchaseLineFormat">
+          <DataField>Amount_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="ShortcustDim_PurchaseLine">
+          <DataField>ShortcustDim_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim2_PurchaseLine">
+          <DataField>ShortcustDim2_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim3_PurchaseLine">
+          <DataField>ShortcustDim3_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim4_PurchaseLine">
+          <DataField>ShortcustDim4_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim5_PurchaseLine">
+          <DataField>ShortcustDim5_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim6_PurchaseLine">
+          <DataField>ShortcustDim6_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim7_PurchaseLine">
+          <DataField>ShortcustDim7_PurchaseLine</DataField>
+        </Field>
+        <Field Name="ShortcustDim8_PurchaseLine">
+          <DataField>ShortcustDim8_PurchaseLine</DataField>
+        </Field>
+        <Field Name="DocumentNo_PRLine4">
+          <DataField>DocumentNo_PRLine4</DataField>
+        </Field>
+        <Field Name="No_PRLine4">
+          <DataField>No_PRLine4</DataField>
+        </Field>
+        <Field Name="Description_PRLine4">
+          <DataField>Description_PRLine4</DataField>
+        </Field>
+        <Field Name="Quantity_PRLine4">
+          <DataField>Quantity_PRLine4</DataField>
+        </Field>
+        <Field Name="Quantity_PRLine4Format">
+          <DataField>Quantity_PRLine4Format</DataField>
+        </Field>
+        <Field Name="UnitCost_PRLine4">
+          <DataField>UnitCost_PRLine4</DataField>
+        </Field>
+        <Field Name="UnitCost_PRLine4Format">
+          <DataField>UnitCost_PRLine4Format</DataField>
+        </Field>
+        <Field Name="Amount_PRLine4">
+          <DataField>Amount_PRLine4</DataField>
+        </Field>
+        <Field Name="Amount_PRLine4Format">
+          <DataField>Amount_PRLine4Format</DataField>
+        </Field>
+        <Field Name="Status_PRLine4">
+          <DataField>Status_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim_PRLine4">
+          <DataField>Globaldim_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim2_PRLine4">
+          <DataField>Globaldim2_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim3_PRLine4">
+          <DataField>Globaldim3_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim4_PRLine4">
+          <DataField>Globaldim4_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim5_PRLine4">
+          <DataField>Globaldim5_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim6_PRLine4">
+          <DataField>Globaldim6_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim7_PRLine4">
+          <DataField>Globaldim7_PRLine4</DataField>
+        </Field>
+        <Field Name="Globaldim8_PRLine4">
+          <DataField>Globaldim8_PRLine4</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
