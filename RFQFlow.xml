@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<Root>
+  <Workflow Code="MS-RFQFLOW" Description="RFQFlow" Category="RFQDOC">
+    <WorkflowStep StepID="2500" EntryPoint="1" PreviousStepID="0" Type="0" FunctionName="RUNWORKFLOWONSENDRFQDOCFORAPPROVAL" SequenceNo="1">
+      <WorkflowStepArgument EventConditions="PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0YYYYALQA4ACIAIABzAHQAYQBuAGQAYQBsAG8AbgBlAD0AIgB5AGUAcwAiAD8APgA8AFIAZQBwAG8AcgB0AFAAYQByAGEAbQBlAHQAZQByAHMAPgA8EEQAYQB0AGEASQB0AGUAbQBzAD4APABEAGEAdABhAEkAdABlAG0AIABuAGEAbQBlAD0AIgBSAEYAUQAgAEgAZQBhAGQAZQByAiA+AFMATwBSAFQASQBOAEcAKABGAGkAZQBsAGQAMQApACA+ADwALwBEAGEAdABhAEkAdABlAG0APgA8AC8ARABhAHQAYQBJAHQAZQBtAHMAPgA8AC8AUgBlAHAAbwByAHQAUABhAHIAYQBtAGUAdABlAHIAcwA+AA==" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2501" PreviousStepID="2500" Type="1" FunctionName="RESTRICTRECORDUSAGE" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="RESTRICTRECORDUSAGE" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2502" PreviousStepID="2501" Type="1" FunctionName="SETSTATUSTOPENDINGAPPROVAL" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="SETSTATUSTOPENDINGAPPROVAL" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2503" PreviousStepID="2502" Type="1" FunctionName="CREATEAPPROVALREQUESTS" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="CREATEAPPROVALREQUESTS" ApproverType="1" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2504" PreviousStepID="2503" Type="1" FunctionName="SENDAPPROVALREQUESTFORAPPROVAL" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="SENDAPPROVALREQUESTFORAPPROVAL" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2505" PreviousStepID="2504" Type="0" FunctionName="RUNWORKFLOWONAPPROVEAPPROVALREQUEST" SequenceNo="1">
+      <WorkflowStepArgument EventConditions="PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0YYYYALQA4ACIAIABzAHQAYQBuAGQAYQBsAG8AbgBlAD0AIgB5AGUAcwAiAD8APgA8AFIAZQBwAG8AcgB0AFAAYQByAGEAbQBlAHQAZQByAHMAPgA8EEQAYQB0AGEASQB0AGUAbQBzAD4APABEAGEAdABhAEkAdABlAG0AIABuAGEAbQBlAD0AIgBBAHAAcAByAG8AdgBhAGwAIABFAG4AdAByAHkAIgA+AFMATwBSAFQASQBOAEcAKABGAGkAZQBsAGQAMgA5ACkAIABXAEgARQBSAEUAKABGAGkAZQBsAGQAMgAxAD0AMQAoADAAKQApADwALwBEAGEAdABhAEkAdABlAG0APgA8AC8ARABhAHQAYQBJAHQAZQBtAHMAPgA8AC8AUgBlAHAAbwByAHQAUABhAHIAYQBtAGUAdABlAHIAcwA+AA==" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2506" PreviousStepID="2505" Type="1" FunctionName="ALLOWRECORDUSAGE" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="ALLOWRECORDUSAGE" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2507" PreviousStepID="2506" Type="1" FunctionName="RELEASEDOCUMENT" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="RELEASEDOCUMENT" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2508" PreviousStepID="2504" Type="0" FunctionName="RUNWORKFLOWONAPPROVEAPPROVALREQUEST" SequenceNo="2">
+      <WorkflowStepArgument EventConditions="PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0YYYYALQA4ACIAIABzAHQAYQBuAGQAYQBsAG8AbgBlAD0AIgB5AGUAcwAiAD8APgA8AFIAZQBwAG8AcgB0AFAAYQByAGEAbQBlAHQAZQByAHMAPgA8EEQAYQB0AGEASQB0AGUAbQBzAD4APABEAGEAdABhAEkAdGVtACAAbgBhAG0AZQA9ACIAQQBwAHAAcgBvAHYAYQBsACAAIEVudHJ5ACIAPgBTAE8AUgBUAEkATgBHAChGaWVsZDI5ACAKYFR3dGQ2PQAxACgAJgBnAHQ7ADAApAApADwALwBEAGEAdABhAEkAdABlAG0APgA8AC8ARABhAHQAYQBJAHQAZQBtAHMAPgA8AC8AUgBlAHAAbwByAHQAUABhAHIAYQBtAGUAdABlAHIAcwA+AA==" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2509" PreviousStepID="2508" Type="1" FunctionName="SENDAPPROVALREQUESTFORAPPROVAL" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="SENDAPPROVALREQUESTFORAPPROVAL" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2510" PreviousStepID="2504" Type="0" FunctionName="RUNWORKFLOWONREJECTAPPROVALREQUEST" SequenceNo="3" />
+    <WorkflowStep StepID="2511" PreviousStepID="2510" Type="1" FunctionName="REJECTALLAPPROVALREQUESTS" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="REJECTALLAPPROVALREQUESTS" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2512" PreviousStepID="2511" Type="1" FunctionName="OPENDOCUMENT" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="OPENDOCUMENT" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2513" PreviousStepID="2504" Type="0" FunctionName="RUNWORKFLOWONCANCELPRAPPROVALREQUEST" SequenceNo="4" />
+    <WorkflowStep StepID="2514" PreviousStepID="2513" Type="1" FunctionName="CANCELALLAPPROVALREQUESTS" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="CANCELALLAPPROVALREQUESTS" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2515" PreviousStepID="2514" Type="1" FunctionName="ALLOWRECORDUSAGE" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="ALLOWRECORDUSAGE" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2516" PreviousStepID="2515" Type="1" FunctionName="OPENDOCUMENT" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="OPENDOCUMENT" />
+    </WorkflowStep>
+    <WorkflowStep StepID="2517" PreviousStepID="2516" Type="1" FunctionName="SHOWMESSAGE" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="SHOWMESSAGE" Message="The approval request for the record has been cancelled." />
+    </WorkflowStep>
+    <WorkflowStep StepID="2518" PreviousStepID="2504" Type="0" FunctionName="RUNWORKFLOWONDELEGATEAPPROVALREQUEST" SequenceNo="1" />
+    <WorkflowStep StepID="2519" PreviousStepID="2518" NextStepID="2504" Type="1" FunctionName="SENDAPPROVALREQUESTFORAPPROVAL" SequenceNo="1">
+      <WorkflowStepArgument ResponseFunctionName="SENDAPPROVALREQUESTFORAPPROVAL" />
+    </WorkflowStep>
+    <WorkflowCategory CategoryCode="RFQDOC" CategoryDescription="RFQ Documents" />
+  </Workflow>
+</Root>

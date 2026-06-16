@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+          "name": "FMI own server 230 Dev",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            // "server": "http://172.19.41.22",
+            "server": "http://localhost",
+            "serverInstance": "FMI_BC230_Dev",
+            "port": 8049,
+            "authentication": "Windows",
+            "startupObjectId": 27,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "usePublicURLFromServer": true,
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}

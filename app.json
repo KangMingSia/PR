@@ -1,0 +1,30 @@
+{
+  "id": "892a5b1c-b3fb-4ae1-b3df-951d044a4bbe",
+  "name": "IBIZCS-MY Purchase Requisition",
+  "publisher": "IBIZCS-MY",
+  "version": "24.0.0.20",
+  "brief": "IBIZCS-MY Purchase Requisition",
+  "description": "IBIZCS-MY Purchase Requisition",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./Logo/IBIZCS-Logo.png",
+  "dependencies": [
+    
+  ],
+  "screenshots": [],
+  "platform": "23.0.0.0",
+  "application": "23.0.0.0",
+  "idRanges": [
+    {
+      "from": 27003000,
+      "to": 27003040
+    }],
+ "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "12.0"
+}
